@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="k1geTClfTezerrMsQbYVynrflK9zLO7jMm9It85u">
+    <meta name="description"
+          content="Multikanal adalah layanan untuk menghubungkan aplikasi anda dengan ribuan produk digital, seperti pulsa, PPOB, voucher games, tagihan listrik, dan masih banyak lagi. Kami juga menyediakan layanan B2B Pulsa dan B2B PPOB">
+
+
+    <title>
+        B2B PPOB dan B2B Pulsa - Multikanal Developer
+    </title>
+
+    <!-- Google Tag Manager -->
+
+    <!-- End Google Tag Manager -->
+    <script defer="" src="static/js/cdn.min.js"></script>
+    <link rel="icon" href="./static/picture/favicon.png">
+    <link rel="stylesheet" href="static/css/landing.css">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.css" as="style"
+          onload="this.onload=null;this.rel='stylesheet'">
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="ns.html" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="bg-white">
+    <div>
+
+        <nav id="iak-navbar" class="iak-navbar" x-data="{ showMobileMenu: false }">
+            <div class="iak-navbar__wrapper">
+                <div class="iak-navbar__logo">
+                    <a href="" class="iak-navbar__logo-link">
+                        <img class="iak-navbar__logo-img" src="static/picture/logo11.png"
+                             alt="Indobest Artha Kreasi.">
+                    </a>
+                </div>
+
+                <div class="iak-navbar__menu">
+                    <div class="iak-navbar__menu-tab">
+
+                        <div>
+                            <a href="about.html" class="iak-navbar__menu-item">
+                                Tentang Multikanal
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="iak-navbar__right-items">
+                    <div>
+                        <a href="./signup.html" class="iak-navbar__btn">
+                            Masuk
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="./login.html" class="iak-navbar__btn iak-navbar__btn--primary">
+                            Daftar
+                        </a>
+                    </div>
+                </div>
+
+                <div class="iak-navbar__mobile-activator">
+                    <button aria-label="Mobile menu" class="iak-navbar__mobile-activator-btn"
+                            @click="showMobileMenu = !showMobileMenu">
+                        <svg class="w-6 h-6" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                             x-show="!showMobileMenu">
+                            <path fill-rule="evenodd"
+                                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                  clip-rule="evenodd"></path>
+                        </svg>
+
+                        <svg class="w-6 h-6" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                             x-cloak="" x-show="showMobileMenu">
+                            <path fill-rule="evenodd"
+                                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                  clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="iak-navbar__mobile" x-cloak="" x-show="showMobileMenu">
+                <div class="iak-navbar__slide-overs">
+                    <div class="iak-navbar__slide-overs__overlay" aria-hidden="true" x-show="showMobileMenu"
+                         x-transition:enter="ease-in-out duration-500" x-transition:enter-start="opacity-0"
+                         x-transition:enter-end="opacity-100" x-transition:leave="ease-in-out duration-500"
+                         x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0"></div>
+
+                    <section class="iak-navbar__slide-overs__section">
+                        <div class="iak-navbar__slide-overs__panel" x-show="showMobileMenu"
+                             x-transition:enter="transform transition ease-in-out duration-500 sm:duration-700"
+                             x-transition:enter-start="translate-x-full" x-transition:enter-end="translate-x-0"
+                             x-transition:leave="transform transition ease-in-out duration-500 sm:duration-700"
+                             x-transition:leave-start="translate-x-0" x-transition:leave-end="translate-x-full">
+                            <div class="iak-navbar__slide-overs__item-wrapper">
+
+                                <div>
+                                    <a href=""
+                                       class="iak-navbar__slide-overs__item iak-navbar__slide-overs__item--active"
+                                       @click="showMobileMenu = false">
+                                        Tentang IAK
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="iak-navbar__slide-overs__right-items">
+                                <div>
+                                    <a href="login.html" class="iak-navbar__slide-overs__right-items-btn">
+                                        Masuk
+                                    </a>
+                                </div>
+
+                                <div>
+                                    <a href="signup.html"
+                                       class="iak-navbar__slide-overs__right-items-btn iak-navbar__slide-overs__item-btn--primary">
+                                        Daftar
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+        </nav>
+
+        <div id="hero-section" class="relative w-full h-full px-8 bg-cool-gray-100 overflow-x-hidden ">
+
+            <div class="max-w-full hidden lg:block">
+                <svg class="absolute top-0 left-0 -ml-8 mt-8" width="59" height="59" viewbox="0 0 59 59" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <rect x="5" y="5" width="49" height="49" rx="13" stroke="white" stroke-width="10"></rect>
+                </svg>
+
+                <svg class="absolute bottom-0 right-96 mr-96 mb-14" width="59" height="59" viewbox="0 0 59 59"
+                     fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="5" y="5" width="49" height="49" rx="13" stroke="white" stroke-width="10"></rect>
+                </svg>
+
+                <svg class="absolute top-0 right-40 mt-14" width="59" height="59" viewbox="0 0 59 59" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <rect x="5" y="5" width="49" height="49" rx="13" stroke="white" stroke-width="10"></rect>
+                </svg>
+
+                <svg class="absolute bottom-8 right-0 -mr-8 " width="59" height="59" viewbox="0 0 59 59" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <rect x="5" y="5" width="49" height="49" rx="13" stroke="white" stroke-width="10"></rect>
+                </svg>
+            </div>
+
+            <div class="default-container flex-col-reverse items-center py-20 lg:flex-row z-10">
+
+                <div class="w-full space-y-4 flex flex-col lg:w-1/2 lg:pr-16">
+                    <h1 class="text-black" data-qa="main-title">
+                            <span class="font-normal leading-normal">
+                                Ribuan Produk,
+                            </span>
+                        Dalam Satu API
+                    </h1>
+
+                    <p class="text-cool-gray-700 text-lg">
+                        Layanan API Multikanal menyediakan B2B Pulsa, B2B PPOB, dan ribuan produk digital dengan kemudahan
+                        integrasi layanan pada platform Anda sendiri.
+                    </p>
+
+                    <div class="flex flex-col md:flex-row mt-1">
+                        <a href="./signup.html">
+                            <button class="button__primary">
+                                Daftar sekarang
+                            </button>
+                        </a>
+
+                        <a id="contact-us-button"
+                           class="md:ml-2 text-base inline-flex items-center text-black hover:underline mt-2 md:mt-0 cursor-pointer">
+                            Punya pertanyaan?
+                            <svg fill="currentColor" class="ml-1 h-4 w-4" viewbox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                      d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="w-full lg:w-1/2 mb-4 md:mb-2 lg:mb-0">
+                    <img src="static/picture/product-illustration.svg" alt="Ribuan Produk API">
+                </div>
+            </div>
+        </div>
+
+        <div id="partner-section"
+             class="px-8 lg:px-24 xl:px-0 xl:max-w-5xl xl:mx-auto flex flex-wrap items-center justify-center"
+             x-data="{partners:
+             [
+             'static/picture/logo-tokopedia-446w.svg',
+             'static/picture/logo-elevania-446w.png',
+             'static/picture/logo-shopee-446w.svg',
+             'static/picture/logo-mitubaby-446w.png',
+             'static/picture/logo-lazada-446w.svg',
+             'static/picture/logo-shopback-446w.png',
+             'static/picture/logo-dana-446w.svg']}">
+            <template x-for="partner in partners">
+                <img class="w-1/2 sm:w-1/4" :src="`${partner}`" :alt="partner">
+            </template>
+        </div>
+
+        <div class="px-8 lg:px-24 xl:px-0 xl:max-w-5xl xl:mx-auto mt-16">
+            <div class="text-center">
+                <div>
+                    <h2 class="pb-4 text-midnight-blue-800">
+                        Apa itu API Multikanal?
+                    </h2>
+
+                    <p>
+                        API Multikanal adalah layanan untuk menghubungkan aplikasi anda dengan ribuan produk digital, seperti
+                        pulsa, voucher games, tagihan listrik, PPOB dan masih banyak lagi. Multikanal juga memberikan panduan
+                        dokumentasi yang lengkap beserta fitur test dan development untuk memudahkan anda terhubung
+                        dengan API Multikanal.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="details-section" class="bg-cool-gray-50">
+            <div class="default-container flex-col-reverse items-center mt-16 py-12 px-8 lg:flex-row">
+                <div class="w-full pt-8 lg:w-1/2">
+                    <img src="static/picture/document-illustration.svg" class="w-10/12 mx-auto"
+                         alt="Document Illustration">
+                </div>
+
+                <div class="w-full space-y-4 lg:w-1/2 lg:pl-12">
+                    <h3 class="pb-4 text-midnight-blue-800">
+                        Dokumentasi Lengkap
+                    </h3>
+
+                    <p>
+                        Tersedia dokumentasi yang lengkap dan mudah untuk memudahkan developer yang ingin terhubung
+                        dengan layanan kami.
+                    </p>
+
+                    <a href="javascript:;" class="inline-flex items-center text-yellow-600 mt-6 hover:underline">
+                        Baca dokumentasi
+                        <svg fill="currentColor" class="ml-1 h-4 w-4" viewbox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                  d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                  clip-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="default-container flex-col items-center py-12 px-8 lg:flex-row">
+            <div class="w-full space-y-4 lg:w-1/2 lg:pr-12">
+                <h3 class="pb-4 text-midnight-blue-800">
+                    Transaksi Aman
+                </h3>
+
+                <p>
+                    Layanan kami menggunakan Socket Secure Layer (SSL) sehingga semua informasi yang ada tetap terjaga
+                    dan aman dalam setiap transaksi.
+                </p>
+
+                <a href="javascript:;" class="inline-flex items-center text-yellow-600 mt-6 hover:underline">
+                    Daftar sekarang
+                    <svg fill="currentColor" class="ml-1 h-4 w-4" viewbox="0 0 20 20">
+                        <path fill-rule="evenodd"
+                              d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                              clip-rule="evenodd"></path>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="w-full pt-8 lg:w-1/2">
+                <img src="static/picture/secure-illustration.svg" alt="Secure Illustration" class="w-10/12 mx-auto">
+            </div>
+        </div>
+
+        <div class="bg-cool-gray-50">
+            <div class="default-container flex-col-reverse items-center py-12 px-8 lg:flex-row">
+                <div class="w-full pt-8 lg:w-1/2">
+                    <img src="static/picture/setting-illustration.svg" alt="Setting Illustration"
+                         class="w-10/12 mx-auto">
+                </div>
+
+                <div class="w-full space-y-4 lg:w-1/2 lg:pl-12">
+                    <h3 class="pb-4 text-midnight-blue-800">
+                        Pengaturan API yang Mudah
+                    </h3>
+
+                    <p>
+                        Seluruh pengaturan API dapat Anda lakukan sendiri sesuai dengan kebutuhan Anda sehingga dapat
+                        memudahkan Anda dalam melakukan transaksi.
+                    </p>
+
+                    <a href="javascript:;" class="inline-flex items-center text-yellow-600 mt-6 hover:underline">
+                        Coba sekarang
+                        <svg fill="currentColor" class="ml-1 h-4 w-4" viewbox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                  d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                  clip-rule="evenodd"></path>
+                        </svg>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div id="flow-section" class="default-container flex-col items-center py-24 px-8 lg:flex-row">
+            <div class="w-full space-y-4 lg:w-1/2 lg:pr-16">
+                <h2 class="pb-4 text-midnight-blue-800">
+                    Proses Layanan API Multikanal
+                </h2>
+
+                <div class="flow-root">
+                    <ul class="-mb-8">
+                        <li>
+                            <div class="relative pb-6">
+                                <span class="absolute top-3 left-3 -ml-px h-full w-0.5 bg-midnight-blue-800"
+                                      aria-hidden="true"></span>
+                                <div class="relative flex space-x-3">
+                                    <div>
+                                        <span class="circle-dot"></span>
+                                    </div>
+                                    <div class="min-w-0 flex-1 flex justify-between space-x-4">
+                                        <div>
+                                            <p class="text-sm text-midnight-blue-800 font-bold">
+                                                Melakukan pendaftaran
+                                            </p>
+                                            <p class="text-sm text-gray-800">
+                                                Lakukan pendaftaran untuk menggunakan layanan API Multikanal.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="relative pb-6">
+                                <span class="absolute top-3 left-3 -ml-px h-full w-0.5 bg-midnight-blue-800"
+                                      aria-hidden="true"></span>
+                                <div class="relative flex space-x-3">
+                                    <div>
+                                        <span class="circle-dot"></span>
+                                    </div>
+                                    <div class="min-w-0 flex-1 flex justify-between space-x-4">
+                                        <div>
+                                            <p class="text-sm text-midnight-blue-800 font-bold">
+                                                Aktivasi akun
+                                            </p>
+                                            <p class="text-sm text-gray-800">
+                                                Lakukan aktivasi akun dengan mengisi profile agar dapat melakukan
+                                                transaksi.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="relative pb-6">
+                                <span class="absolute top-3 left-3 -ml-px h-full w-0.5 bg-midnight-blue-800"
+                                      aria-hidden="true"></span>
+                                <div class="relative flex space-x-3">
+                                    <div>
+                                        <span class="circle-dot"></span>
+                                    </div>
+                                    <div class="min-w-0 flex-1 flex justify-between space-x-4">
+                                        <div>
+                                            <p class="text-sm text-midnight-blue-800 font-bold">
+                                                Pengaturan API
+                                            </p>
+                                            <p class="text-sm text-gray-800">
+                                                Anda dapat mengatur setting transaksi, seperti Whitelist IP, Callback
+                                                URL, dsb.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="relative pb-6">
+                                <span class="absolute top-3 left-3 -ml-px h-full w-0.5 bg-midnight-blue-800"
+                                      aria-hidden="true"></span>
+                                <div class="relative flex space-x-3">
+                                    <div>
+                                        <span class="circle-dot"></span>
+                                    </div>
+                                    <div class="min-w-0 flex-1 flex justify-between space-x-4">
+                                        <div>
+                                            <p class="text-sm text-midnight-blue-800 font-bold">
+                                                Top up deposit
+                                            </p>
+                                            <p class="text-sm text-gray-800">
+                                                Top up deposit untuk bertransaksi semua produk digital yang tersedia.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="relative pb-6">
+                                <div class="relative flex space-x-3">
+                                    <div>
+                                        <span class="circle-dot"></span>
+                                    </div>
+                                    <div class="min-w-0 flex-1 flex justify-between space-x-4">
+                                        <div>
+                                            <p class="text-sm text-midnight-blue-800 font-bold">
+                                                Siap bertransaksi
+                                            </p>
+
+                                            <p class="text-sm text-gray-800">
+                                                Anda dapat langsung bertransaksi, dengan laporan lengkap yang dapat
+                                                membantu mengelola transaksimu.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w-full pt-8 lg:w-1/2">
+                <img src="static/picture/api-illustration-2.svg" alt="API Illustration" class="mx-auto">
+            </div>
+        </div>
+        <div class="relative">
+            <div class="absolute inset-0">
+                <img src="static/picture/bg-banner.png" class="h-full w-full object-cover"
+                     alt="1.626 Produk dalam satu API">
+            </div>
+            <div class="relative flex flex-col-reverse justify-center py-20 text-white text-center lg:flex-row lg:text-left">
+                <span class="text-8xl font-bold">1.626</span>
+                <div class="lg:ml-8">
+                    <h2>Produk</h2>
+                    <h1>Dalam Satu API</h1>
+                </div>
+            </div>
+        </div>
+
+        <div x-init="getProducts()" x-data="productList" id="product-section"
+             class="default-container flex-col mt-16 text-center">
+            <h2 class="text-midnight-blue-800">
+                Daftar Produk
+            </h2>
+
+            <div class="grid grid-cols-2 gap-4 w-2/3 mx-auto mt-6 md:grid-cols-4 md:gap-2">
+                <template x-for="product in productList">
+                    <button class="button__product-list " :class="product.is_active ? 'active' : ''"
+                            x-text="product.name" x-on:click="loadProducts(product.type)">
+                    </button>
+                </template>
+
+            </div>
+
+            <div class="container-default items-center grid grid-cols-2 gap-4 px-12 mt-12 md:grid-cols-4 lg:grid-cols-5 lg:px-20">
+                <template x-for="operator in operators">
+                    <div x-show="!operator.operator_name.includes('Gamefinity')"
+                         class="box-content h-8 w-16 p-4 border border-gray-600 rounded md:h-16 md:w-32 mx-auto">
+                        <img :src="operator.icon_url" :alt="operator.operator_name"
+                             class="w-full md:w-1/2 h-8 mx-auto object-scale-down object-center">
+
+                        <p x-text="operator.operator_name" class="hidden md:block font-bold"></p>
+                    </div>
+                </template>
+            </div>
+        </div>
+
+
+        <div id="contact-us-form"></div>
+        <div id="contact-section" class="bg-cool-gray-50 mt-16">
+            <div class="px-10 lg:px-24 xl:px-0 xl:max-w-5xl xl:mx-auto py-12">
+                <div class="md:max-w-xl lg:max-w-3xl">
+                    <h1 class="text-midnight-blue-800 leading-tight text-3xl md:text-4xl md:leading-tight"
+                        data-qa="contact-title">
+                        Masih bingung? <br> Kami akan cari solusi terbaik untuk Anda!
+                    </h1>
+                    <div class="bg-vivid-blue-500 h-2 w-20 mt-6 mb-4 block"></div>
+                    <p class="body-lg sm:text-size-body-xl" data-qa="contact-subtitle">
+                        Pelajari lebih lanjut cara integrasi dengan mudah dengan layanan API kami
+                    </p>
+                </div>
+
+                <a href="mailto:support@iak.id">
+                    <button class="button__primary mt-6">
+                        <svg class="w-6 h-6 mr-2" fill="currentColor" viewbox="0 0 20 20"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                        </svg>
+                        Hubungi kami
+                    </button>
+                </a>
+
+            </div>
+        </div>
+
+        <footer class="bg-midnight-blue-800" style="background-color: #45cc88;">
+            <div class="px-10 py-12 lg:px-24 xl:max-w-5xl xl:mx-auto xl:px-0">
+                <div class="sm:grid sm:grid-cols-2 sm:gap-8 lg:grid-cols-3">
+                    <div class="space-y-6">
+                        <img src="static/picture/logo11.png" class="w-1/2" alt="Indobest Artha Kreasi.">
+                        <address class="text-white not-italic">
+                            Jl. Jalur Sutera Timur Kav. 20A<br>
+                            Ruko No. 7B-11, Alam Sutera<br>
+                            Tangerang, Banten 15235
+                        </address>
+                    </div>
+
+                    <div class="lg:col-span-2 lg:grid lg:grid-cols-2 lg:gap-8">
+                        <div class="mt-12 grid grid-cols-2 gap-8 sm:mt-0 lg:col-span-2">
+
+                            <div>
+                                <div class="body-xl font-bold text-white">
+                                    Perusahaan
+                                </div>
+
+                                <ul role="list" class="mt-4 space-y-4 text-white">
+                                    <li>
+                                        <a href="about.html"
+                                           class="text-cool-gray-300 cursor-pointer transition hover:text-white hover:underline">
+                                            Tentang Multikanal
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div >
+                                <div>
+                                    <div class="body-xl font-bold text-white">
+                                        Hubungi kami
+                                    </div>
+
+                                    <div class="mt-4 text-white">
+                                        <div class="flex items-center">
+                                            <svg class="w-4 h-4 mr-2 lg:hidden xl:inline" fill="currentColor"
+                                                 viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                                            </svg>
+                                            <a href="mailto:support@iak.id" class="hover:underline">
+                                                support@iak.id
+                                            </a>
+                                        </div>
+                                        <div class="mt-2 flex items-center">
+                                            <svg class="w-4 h-4 mr-2 lg:hidden xl:inline" fill="currentColor"
+                                                 viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                                            </svg>
+                                            <a href="tel:+6281574787859" class="hover:underline">
+                                                62 815-7478-7859 (CS)
+                                            </a>
+                                        </div>
+                                        <div class="mt-2 flex items-center">
+                                            <svg class="w-4 h-4 mr-2 lg:hidden xl:inline" fill="currentColor"
+                                                 viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                                            </svg>
+                                            <a href="tel:+6287863636362" class="hover:underline">
+                                                62 878-6363-6362 (CS)
+                                            </a>
+                                        </div>
+                                        <div class="mt-2 flex items-center">
+                                            <svg class="w-4 h-4 mr-2 lg:hidden xl:inline" fill="currentColor"
+                                                 viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                                            </svg>
+                                            <a href="tel:+6281295919776" class="hover:underline">
+                                                62 812-9591-9776 (CS)
+                                            </a>
+                                        </div>
+                                        <div class="mt-2 flex items-center">
+                                            <svg class="w-4 h-4 mr-2 lg:hidden xl:inline" fill="currentColor"
+                                                 viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                                            </svg>
+                                            <a href="tel:+6285789957899" class="hover:underline">
+                                                62 857-8995-7899 (Chatbot)
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="mt-6 text-white flex items-center space-x-3">
+                                        <a href="javascript:;" target="_blank" rel="noreferrer" aria-label="Facebook IAK">
+                                            <svg class="h-8 w-8 text-cool-gray-300 transition hover:text-white"
+                                                 fill="currentColor" viewbox="0 0 24 24" aria-hidden="true">
+                                                <path fill-rule="evenodd"
+                                                      d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                                      clip-rule="evenodd"></path>
+                                            </svg>
+                                        </a>
+                                        <a href="javascript:;" target="_blank" rel="noreferrer" aria-label="Twitter IAK">
+                                            <svg class="h-8 w-8 text-cool-gray-300 transition hover:text-white"
+                                                 fill="currentColor" viewbox="0 0 24 24" aria-hidden="true">
+                                                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
+                                            </svg>
+                                        </a>
+                                        <a href="javascript:;" target="_blank" rel="noreferrer" aria-label="LinkedIn IAK">
+                                            <svg class="h-8 w-8 text-cool-gray-300 transition hover:text-white"
+                                                 fill="currentColor" viewbox="0 0 24 24" aria-hidden="true">
+                                                <path d="M17.8333 2H6.16667C3.86583 2 2 3.86583 2 6.16667V17.8333C2 20.1342 3.86583 22 6.16667 22H17.8333C20.135 22 22 20.1342 22 17.8333V6.16667C22 3.86583 20.135 2 17.8333 2ZM8.66667 17.8333H6.16667V8.66667H8.66667V17.8333ZM7.41667 7.61C6.61167 7.61 5.95833 6.95167 5.95833 6.14C5.95833 5.32833 6.61167 4.67 7.41667 4.67C8.22167 4.67 8.875 5.32833 8.875 6.14C8.875 6.95167 8.2225 7.61 7.41667 7.61ZM18.6667 17.8333H16.1667V13.1633C16.1667 10.3567 12.8333 10.5692 12.8333 13.1633V17.8333H10.3333V8.66667H12.8333V10.1375C13.9967 7.9825 18.6667 7.82333 18.6667 12.2008V17.8333Z"></path>
+                                            </svg>
+                                        </a>
+                                        <a href="javascript:;" target="_blank" rel="noreferrer" aria-label="Instagram IAK">
+                                            <svg class="h-8 w-8 text-cool-gray-300 transition hover:text-white"
+                                                 fill="currentColor" viewbox="0 0 24 24" aria-hidden="true">
+                                                <path fill-rule="evenodd"
+                                                      d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                                                      clip-rule="evenodd"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+    </div>
+</div>
+
+
+<script>
+    function setProductName(lang, name) {
+
+        return name;
+    }
+
+    document.addEventListener('alpine:init', () => {
+        Alpine.data('productList', () => ({
+            productList: [{
+                name: setProductName(lang, 'Pulsa'),
+                type: 'pulsa',
+                is_active: true,
+            }, {
+                name: setProductName(lang, 'Paket Data'),
+                type: 'data',
+                is_active: false,
+            }, {
+                name: setProductName(lang, 'Listrik'),
+                type: 'listrik',
+                is_active: false,
+            }, {
+                name: setProductName(lang, 'E-money'),
+                type: 'emoney',
+                is_active: false,
+            }, {
+                name: setProductName(lang, 'Voucher'),
+                type: 'voucher',
+                is_active: false,
+            }, {
+                name: setProductName(lang, 'Games'),
+                type: 'game',
+                is_active: false,
+            }, {
+                name: setProductName(lang, 'Pascabayar'),
+                type: 'pascabayar',
+                is_active: false,
+            }, {
+                name: setProductName(lang, 'International'),
+                type: 'international',
+                is_active: false,
+            },],
+
+            operators: [{
+                operator_name: 'AXIS',
+                type: 'pulsa',
+                icon_url: './static/picture/axis.png',
+            },{
+                operator_name: 'Smart',
+                type: 'pulsa',
+                icon_url: './static/picture/smart.png',
+            },{
+                operator_name: 'Three',
+                type: 'pulsa',
+                icon_url: './static/picture/three.png',
+            },{
+                operator_name: 'Telkomsel',
+                type: 'pulsa',
+                icon_url: './static/picture/telkomsel.png',
+            },{
+                operator_name: 'Indosat',
+                type: 'pulsa',
+                icon_url: './static/picture/indosat.png',
+            },{
+                operator_name: 'XL',
+                type: 'pulsa',
+                icon_url: './static/picture/xl.png',
+            },{
+                operator_name: 'by.U',
+                type: 'pulsa',
+                icon_url: '/static/picture/byu.png',
+            }],
+
+            products: null,
+
+            loadProducts(type) {
+
+                if (type === 'pulsa') {
+                    this.operators = [{
+                        operator_name: 'AXIS',
+                        type: 'pulsa',
+                        icon_url: './static/picture/axis.png',
+                    },{
+                        operator_name: 'Smart',
+                        type: 'pulsa',
+                        icon_url: './static/picture/smart.png',
+                    },{
+                        operator_name: 'Three',
+                        type: 'pulsa',
+                        icon_url: './static/picture/three.png',
+                    },{
+                        operator_name: 'Telkomsel',
+                        type: 'pulsa',
+                        icon_url: './static/picture/telkomsel.png',
+                    },{
+                        operator_name: 'Indosat',
+                        type: 'pulsa',
+                        icon_url: './static/picture/indosat.png',
+                    },{
+                        operator_name: 'XL',
+                        type: 'pulsa',
+                        icon_url: './static/picture/xl.png',
+                    },{
+                        operator_name: 'by.U',
+                        type: 'pulsa',
+                        icon_url: '/static/picture/byu.png',
+                    }];
+                }
+                if (type === 'data') {
+                    this.operators = [{
+                        operator_name: 'Telkomsel Paket Internet',
+                        type: 'data',
+                        icon_url: './static/picture/data/telkomsel.jpeg',
+                    },{
+                        operator_name: 'XL Paket Internet',
+                        type: 'data',
+                        icon_url: './static/picture/data/xl.png',
+                    },{
+                        operator_name: 'Indosat Paket Internet',
+                        type: 'data',
+                        icon_url: './static/picture/data/indosat.png',
+                    },{
+                        operator_name: 'Tri Paket Internet',
+                        type: 'data',
+                        icon_url: './static/picture/data/three.png',
+                    },{
+                        operator_name: 'Axis Paket Internet',
+                        type: 'data',
+                        icon_url: './static/picture/data/axis.png',
+                    },{
+                        operator_name: 'Smartfren Paket Internet',
+                        type: 'data',
+                        icon_url: '/static/picture/data/smart.png',
+                    },{
+                        operator_name: 'Garena Voucher dan Telkomsel Paket Internet',
+                        type: 'data',
+                        icon_url: './static/picture/data/telkomsel.jpg',
+                    }];
+                }
+                if (type === 'game') {
+                    this.operators = [{
+                        operator_name: 'Gemscool',
+                        type: 'game',
+                        icon_url: './static/picture/games/140119035155-Gemscool-01.png',
+                    },{
+                        operator_name: 'Garena',
+                        type: 'game',
+                        icon_url: './static/picture/games/090920053734-GARENA.png',
+                    },{
+                        operator_name: 'MyCard',
+                        type: 'game',
+                        icon_url: './static/picture/games/140119040002-MyCard-01.png',
+                    },{
+                        operator_name: 'Playstation',
+                        type: 'game',
+                        icon_url: './static/picture/games/140119040055-Playstation-01.png',
+                    },{
+                        operator_name: 'Lyto',
+                        type: 'game',
+                        icon_url: './static/picture/games/140119035856-Lyto-01.png',
+                    },{
+                        operator_name: 'Megaxus',
+                        type: 'game',
+                        icon_url: './static/picture/games/140119035924-Megaxus-01.png',
+                    },{
+                        operator_name: 'iTunes US REGION',
+                        type: 'game',
+                        icon_url: './static/picture/games/140119035842-Itunes US-01.png',
+                    },{
+                        operator_name: 'Wave Game',
+                        type: 'game',
+                        icon_url: './static/picture/games/140119040321-Wave Game-01.png',
+                    },{
+                        operator_name: 'Razer PIN',
+                        type: 'game',
+                        icon_url: './static/picture/games/140119040145-Razer-01.png',
+                    },{
+                        operator_name: 'Steam Sea',
+                        type: 'game',
+                        icon_url: './static/picture/games/140119040218-Steam SEA-01.png',
+                    },{
+                        operator_name: 'Google Play US REGION',
+                        type: 'game',
+                        icon_url: './static/picture/games/140119035308-Gplay US-01.png',
+                    },{
+                        operator_name: 'Google Play Indonesia',
+                        type: 'game',
+                        icon_url: './static/picture/games/140119021513-gplay.png',
+                    },{
+                        operator_name: 'iTunes Gift Card Indonesia',
+                        type: 'game',
+                        icon_url: './static/picture/games/140119035829-Itunes ID-01.png',
+                    },{
+                        operator_name: 'Battlenet SEA',
+                        type: 'game',
+                        icon_url: './static/picture/games/140119034301-Battlenet-01 (1).png',
+                    },{
+                        operator_name: 'GameView',
+                        type: 'game',
+                        icon_url: './static/picture/games/140119035124-Gameview-01.png',
+                    },{
+                        operator_name: 'Mobile Legend',
+                        type: 'game',
+                        icon_url: './static/picture/games/140119035948-Moba-01.png',
+                    },{
+                        operator_name: 'Wifi ID',
+                        type: 'game',
+                        icon_url: './static/picture/games/140119040328-Wifi.id-01.png',
+                    },{
+                        operator_name: 'PUBG PC',
+                        type: 'game',
+                        icon_url: './static/picture/games/140119040102-PUBG-01.png',
+                    },{
+                        operator_name: 'Ragnarok M',
+                        type: 'game',
+                        icon_url: './static/picture/games/180119033806-ragnarok-01.png',
+                    },{
+                        operator_name: 'Point Blank',
+                        type: 'game',
+                        icon_url: './static/picture/games/260319103244-Point Blank-01.png',
+                    },{
+                        operator_name: 'Free Fire',
+                        type: 'game',
+                        icon_url: './static/picture/games/090920054317-FF BLACK.png',
+                    },{
+                        operator_name: 'Speed Drifters',
+                        type: 'game',
+                        icon_url: './static/picture/games/090920054126-SPEED.png',
+                    },{
+                        operator_name: 'Arena of Valor',
+                        type: 'game',
+                        icon_url: './static/picture/games/090920053613-AOV.png',
+                    },{
+                        operator_name: 'Bleach Mobile 3D',
+                        type: 'game',
+                        icon_url: './static/picture/games/220719051649-bleach-mobile-3d-logo.jpg',
+                    },{
+                        operator_name: 'Dragon Nest M - SEA',
+                        type: 'game',
+                        icon_url: './static/picture/games/220719052550-dragon-nest-m-sea-logo.jpg',
+                    },{
+                        operator_name: 'PUBG Mobile',
+                        type: 'game',
+                        icon_url: './static/picture/games/270819022706-pubg-mobile.png',
+                    },{
+                        operator_name: 'Call of Duty Mobile',
+                        type: 'game',
+                        icon_url: './static/picture/games/090920051839-Call of duty.png',
+                    },{
+                        operator_name: 'Marvel Super War',
+                        type: 'game',
+                        icon_url: './static/picture/games/040220051825-logomsw.jpg',
+                    },{
+                        operator_name: 'Light of Thel: Glory of Cepheus',
+                        type: 'game',
+                        icon_url: './static/picture/games/210420040022-light-of-thel.png',
+                    },{
+                        operator_name: 'Lords Mobile',
+                        type: 'game',
+                        icon_url: './static/picture/games/210420040246-lords-mobile.png',
+                    },{
+                        operator_name: 'LifeAfter',
+                        type: 'game',
+                        icon_url: './static/picture/games/210420041037-lifeafter.png',
+                    },{
+                        operator_name: 'Minecraft',
+                        type: 'game',
+                        icon_url: './static/picture/games/210420041717-minecraft.png',
+                    },{
+                        operator_name: 'Nintendo eShop',
+                        type: 'game',
+                        icon_url: './static/picture/games/210420042050-nintendo-eshop.png',
+                    },{
+                        operator_name: 'JOOX',
+                        type: 'game',
+                        icon_url: './static/picture/games/110921091227-joox.png',
+                    },{
+                        operator_name: 'Vidio',
+                        type: 'game',
+                        icon_url: './static/picture/games/110921091239-vidio.png',
+                    },{
+                        operator_name: 'Higgs Domino',
+                        type: 'game',
+                        icon_url: './static/picture/games/041021020929-higgs domino.png',
+                    },{
+                        operator_name: 'Genshin Impact',
+                        type: 'game',
+                        icon_url: './static/picture/games/150921025413-Untitled design (3).png',
+                    },{
+                        operator_name: 'League of Legends Wild Rift',
+                        type: 'game',
+                        icon_url: './static/picture/games/150322030144-league_of_legends_wild_rift.jpg',
+                    },{
+                        operator_name: 'Garena Voucher dan XL Paket Internet',
+                        type: 'game',
+                        icon_url: './static/picture/games/220322054610-garena-xl.jpg',
+                    }];
+                }
+                if (type === 'voucher') {
+                    this.operators = [{
+                        operator_name: 'Alfamart Voucher',
+                        type: 'voucher',
+                        icon_url: './static/picture/voucher/140119034649-Alfa-01.png',
+                    },{
+                        operator_name: 'Indomaret Voucher',
+                        type: 'voucher',
+                        icon_url: './static/picture/voucher/140119035814-Indomaret-01.png',
+                    },{
+                        operator_name: 'Spotify',
+                        type: 'voucher',
+                        icon_url: './static/picture/voucher/240821050037-spotify-premium.png',
+                    },{
+                        operator_name: 'Ancol',
+                        type: 'voucher',
+                        icon_url: './static/picture/voucher/140119034700-Ancol-01.png',
+                    },{
+                        operator_name: 'Transmart Carrefour',
+                        type: 'voucher',
+                        icon_url: './static/picture/voucher/260319102600-Carrefour-01.png',
+                    },{
+                        operator_name: 'Grab Gifts',
+                        type: 'voucher',
+                        icon_url: './static/picture/voucher/260319033516-Grab-01.png',
+                    },{
+                        operator_name: 'Blibli.com',
+                        type: 'voucher',
+                        icon_url: './static/picture/voucher/090419105656-blibli.png',
+                    },{
+                        operator_name: 'Tokopedia',
+                        type: 'voucher',
+                        icon_url: './static/picture/voucher/090419105719-tokopedia.png',
+                    },{
+                        operator_name: 'Lotteria',
+                        type: 'voucher',
+                        icon_url: './static/picture/voucher/lotteria.png',
+                    }];
+                }
+                if (type === 'emoney') {
+                    this.operators = [{
+                        operator_name: 'Mandiri E-Toll',
+                        type: 'emoney',
+                        icon_url: './static/picture/money/emone.png',
+                    },{
+                        operator_name: 'Indomaret Card E-Money',
+                        type: 'emoney',
+                        icon_url: './static/picture/money/140119035803-Indomaret-01.png',
+                    },{
+                        operator_name: 'GoPay E-Money',
+                        type: 'emoney',
+                        icon_url: './static/picture/money/gopay.png',
+                    },{
+                        operator_name: 'OVO',
+                        type: 'emoney',
+                        icon_url: './static/picture/money/140119040045-ovo-01.png',
+                    },{
+                        operator_name: 'LinkAja',
+                        type: 'emoney',
+                        icon_url: './static/picture/money/120619111757-040319020726-linkaja.png',
+                    },{
+                        operator_name: 'TIX ID',
+                        type: 'emoney',
+                        icon_url: './static/picture/money/140119040242-Tix Id-01.png',
+                    },{
+                        operator_name: 'DANA',
+                        type: 'emoney',
+                        icon_url: './static/picture/money/140119034905-Dana-01.png',
+                    },{
+                        operator_name: 'TapCash BNI',
+                        type: 'emoney',
+                        icon_url: './static/picture/money/070519015817-tapcash.jpg',
+                    },{
+                        operator_name: 'Shopee Pay',
+                        type: 'emoney',
+                        icon_url: './static/picture/money/021219030403-shopeepay.jpg',
+                    }];
+                }
+
+                if (type === 'listrik') {
+                    this.operators = [{
+                        operator_name: 'PLN',
+                        type: 'listrik',
+                        icon_url: './static/picture/listrik.svg',
+                    }];
+                }
+
+                if (type === 'pascabayar') {
+                    this.operators = [{
+                        operator_name: 'BPJS',
+                        type: 'pascabayar',
+                        icon_url: './static/picture/pascabayar/BPJS.svg',
+                    }, {
+                        operator_name: 'Finance',
+                        type: 'pascabayar',
+                        icon_url: './static/picture/pascabayar/finance.svg',
+                    }, {
+                        operator_name: 'Gas',
+                        type: 'pascabayar',
+                        icon_url: './static/picture/pascabayar/gas.svg',
+                    }, {
+                        operator_name: 'HP',
+                        type: 'pascabayar',
+                        icon_url: './static/picture/pascabayar/HP.svg',
+                    }, {
+                        operator_name: 'Internet',
+                        type: 'pascabayar',
+                        icon_url: './static/picture/pascabayar/internet.svg',
+                    }, {
+                        operator_name: setProductName(lang, 'Pajak Kendaraan'),
+                        type: 'pascabayar',
+                        icon_url: './static/picture/pascabayar/pajak-kendaraan.svg',
+                    }, {
+                        operator_name: 'PBB',
+                        type: 'pascabayar',
+                        icon_url: './static/picture/pascabayar/PBB.svg',
+                    }, {
+                        operator_name: 'PDAM',
+                        type: 'pascabayar',
+                        icon_url: './static/picture/pascabayar/PDAM.svg',
+                    }, {
+                        operator_name: 'PLN',
+                        type: 'pascabayar',
+                        icon_url: './static/picture/pascabayar/PLN.svg',
+                    }, {
+                        operator_name: 'TV',
+                        type: 'pascabayar',
+                        icon_url: './static/picture/pascabayar/TV.svg',
+                    },];
+                }
+
+                if (type === 'international') {
+                    this.operators = [{
+                        operator_name: 'China Top Up',
+                        type: 'international',
+                        icon_url: './static/picture/International/china-topup.svg',
+                    }, {
+                        operator_name: 'Malaysia Top Up',
+                        type: 'international',
+                        icon_url: './static/picture/International/malaysia-topup.svg',
+                    }, {
+                        operator_name: 'Philipine Top Up',
+                        type: 'international',
+                        icon_url: './static/picture/International/philipine-topup.svg',
+                    }, {
+                        operator_name: 'Singapore Top Up',
+                        type: 'international',
+                        icon_url: './static/picture/International/singapore-topup.svg',
+                    }, {
+                        operator_name: 'Thailand Top Up',
+                        type: 'international',
+                        icon_url: './static/picture/International/thailand-topup.svg',
+                    },];
+                }
+
+                this.productList = this.productList.map((product) => {
+                    const productObj = product;
+                    productObj.is_active = false;
+                    return productObj;
+                });
+
+                this.productList[this.productList.findIndex((product) => product.type === type)].is_active = true;
+            },
+
+            getProducts() {
+                httpClient
+                    .get('landing-page')
+                    .then((result) => {
+                        this.products = result.data.data;
+                        this.loadProducts('pulsa');
+                    });
+            },
+        }))
+    })
+</script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="static/js/toastr.min.js"></script>
+
+<script>
+
+    const lang = 'id';
+
+    document.addEventListener('alpine:init', () => {
+        Alpine.data('contactUsForm', () => ({
+            form: {
+                name: '',
+                email: '',
+                hp: '',
+                message: '',
+            },
+
+            errors: [],
+
+            sendContactUs() {
+                httpClient
+                    .post('landing-page/contact-us', {
+                        name: this.form.name,
+                        email: this.form.email,
+                        hp: this.form.hp,
+                        message: this.form.message,
+                    })
+                    .then((result) => {
+
+                        toastr.success(result.data.message.success[0]);
+
+                        Object.keys(this.form).forEach((field) => (this.form[field] = ''));
+
+                        this.errors = [];
+                    })
+                    .catch((err) => {
+
+                        let error = err.response.data.message;
+
+                        Object.keys(error).forEach((field) => (this.errors.push(error[field][0])))
+
+                        if (error.name === undefined &&
+                            error.email === undefined &&
+                            error.hp === undefined &&
+                            error.message === undefined) {
+
+                            const message = {
+                                id: 'Terjadi error pada server, mohon untuk mencoba lagi beberapa saat',
+                                en: 'Server Unavailable, Please try again in a few minutes',
+                            };
+
+                            toastr.error(message[lang]);
+
+                        }
+
+                        Object.keys(this.form).forEach((field) => (this.form[field] = ''))
+                    });
+            },
+        }))
+    });
+</script>
+
+<script src="static/js/manifest.js"></script>
+<script src="static/js/axios.js"></script>
+<script src="static/js/httpClient.js"></script>
+<script>
+
+    document.getElementById('contact-us-button').addEventListener('click', () => {
+        var startingY = window.pageYOffset
+        var elementY = document.getElementById('contact-us-form').offsetTop;
+        var duration = 1500;
+
+        var targetY = document.body.scrollHeight - elementY < window.innerHeight ? document.body.scrollHeight -
+            window.innerHeight : elementY
+        var diff = targetY - startingY
+
+        var easing = function (t) {
+            return t < .5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1
+        }
+        var start
+
+        if (!diff) return
+
+        window.requestAnimationFrame(function step(timestamp) {
+            if (!start) start = timestamp
+
+            var percent = Math.min((timestamp - start) / duration, 1)
+            percent = easing(percent)
+
+            window.scrollTo(0, startingY + diff * percent)
+
+            if ((timestamp - start) < duration) {
+                window.requestAnimationFrame(step)
+            }
+        })
+    })
+
+</script>
+</body>
+
+</html>
